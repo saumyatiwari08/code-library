@@ -1,3 +1,3 @@
 # APS code-library
 
-### This repository contains all handy code snippets and my solutions to the problems on sites like codechef, hackerrank, hackerearth, codeforces, spoj, etc.
+### This repository contains all handy code snippets and my solutions to the problems on platforms like codechef, atcoder, hackerrank, hackerearth, codeforces, spoj, etc.
