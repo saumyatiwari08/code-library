@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+int main() {
+    IOS
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        int a[n];
+        for (int i = 0; i < n; ++i) {
+            cin >> a[i];
+        }
+        int cur = 2, diff = a[1] - a[0];
+        int ans = 2;
+        for (int i = 2; i < n; ++i) {
+            if(a[i]-a[i-1] == diff) {
+                cur++;
+            }
+            else {
+                cur = 2;
+                diff = a[i] -a[i-1];
+            }
+            ans = max(ans, cur);
+        }
+        cout << ans << "\n";
+    }
+    return 0;
+}
